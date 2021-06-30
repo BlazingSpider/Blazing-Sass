@@ -1,0 +1,24 @@
+{
+  "name": "Blazing-Sass",
+  "version": "0.1.0",
+  "description": "Blazing Sass CSS framework, ready to use in Sass powered applications",
+  "keywords": [
+    "blazing-sass",
+    "scss",
+    "sass"
+  ],
+  "homepage": "https://github.com/BlazingSpider/Blazing-Sass.git",
+  "bugs": {
+    "url": "https://github.com/BlazingSpider/Blazing-Sass.git/issues"
+  },
+  "license": "MIT",
+  "author": "Massoud Shakeri <massoud@blazingspider.com>",
+  "files": [
+    "vendor"
+  ],
+  "main": "_blazing.scss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlazingSpider/Blazing-Sass.git"
+  }
+}

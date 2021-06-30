@@ -1,0 +1,161 @@
+/*!
+Blazing v0.1.0
+Copyright 2021 Blazing Spider Web Solutions
+Licensed under the BSD License.
+https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
+*/
+.blazing-u-1-8, .blazing-u-2-8, .blazing-u-3-8, .blazing-u-4-8, .blazing-u-5-8, .blazing-u-6-8, .blazing-u-7-8 {
+  display: inline-block;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+}
+
+.blazing-u-1-8 {
+  width: 12.5000%;
+}
+
+.blazing-u-2-8 {
+  width: 25%;
+}
+
+.blazing-u-3-8 {
+  width: 37.5000%;
+}
+
+.blazing-u-4-8 {
+  width: 50%;
+}
+
+.blazing-u-5-8 {
+  width: 62.5000%;
+}
+
+.blazing-u-6-8 {
+  width: 75%;
+}
+
+.blazing-u-7-8 {
+  width: 87.5000%;
+}
+
+@include respond(lg) { // width < 1200?
+  .blazing-u-lg-1-8 {
+    width: 12.5000%;
+  }
+
+  .blazing-u-lg-2-8 {
+    width: 25%;
+  }
+
+  .blazing-u-lg-3-8 {
+    width: 37.5000%;
+  }
+
+  .blazing-u-lg-4-8 {
+    width: 50%;
+  }
+
+  .blazing-u-lg-5-8 {
+    width: 62.5000%;
+  }
+
+  .blazing-u-lg-6-8 {
+    width: 75%;
+  }
+
+  .blazing-u-lg-7-8 {
+    width: 87.5000%;
+  }
+}
+
+@include respond(md) { // width < 900?
+  .blazing-u-md-1-8 {
+    width: 12.5000%;
+  }
+
+  .blazing-u-md-2-8 {
+    width: 25%;
+  }
+
+  .blazing-u-md-3-8 {
+    width: 37.5000%;
+  }
+
+  .blazing-u-md-4-8 {
+    width: 50%;
+  }
+
+  .blazing-u-md-5-8 {
+    width: 62.5000%;
+  }
+
+  .blazing-u-md-6-8 {
+    width: 75%;
+  }
+
+  .blazing-u-md-7-8 {
+    width: 87.5000%;
+  }
+}
+
+@include respond(sm) { // width < 1200?
+  .blazing-u-sm-1-8 {
+    width: 12.5000%;
+  }
+
+  .blazing-u-sm-2-8 {
+    width: 25%;
+  }
+
+  .blazing-u-sm-3-8 {
+    width: 37.5000%;
+  }
+
+  .blazing-u-sm-4-8 {
+    width: 50%;
+  }
+
+  .blazing-u-sm-5-8 {
+    width: 62.5000%;
+  }
+
+  .blazing-u-sm-6-8 {
+    width: 75%;
+  }
+
+  .blazing-u-sm-7-8 {
+    width: 87.5000%;
+  }
+}
+
+@include respond(xl) {
+  .blazing-u-xl-1-8 {
+    width: 12.5000%;
+  }
+
+  .blazing-u-xl-2-8 {
+    width: 25%;
+  }
+
+  .blazing-u-xl-3-8 {
+    width: 37.5000%;
+  }
+
+  .blazing-u-xl-4-8 {
+    width: 50%;
+  }
+
+  .blazing-u-xl-5-8 {
+    width: 62.5000%;
+  }
+
+  .blazing-u-xl-6-8 {
+    width: 75%;
+  }
+
+  .blazing-u-xl-7-8 {
+    width: 87.5000%;
+  }
+}

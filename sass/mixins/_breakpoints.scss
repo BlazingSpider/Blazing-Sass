@@ -1,0 +1,44 @@
+/*!
+Blazing v0.1.0
+Copyright 2021 Blazing Spider Web Solutions
+Licensed under the BSD License.
+https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
+*/
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- sm
+- md
+- lg
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+    // sm
+    @if $breakpoint == sm {
+        @media only screen and (max-width: $bp-small) { @content };    //600px
+    }
+    // md
+    @if $breakpoint == md {
+        @media only screen and (max-width: $bp-medium) { @content };     //900px
+    }
+    // lg
+    @if $breakpoint == lg {
+        @media only screen and (max-width: $bp-large) { @content };    //1200px
+    }
+    // xl
+    @if $breakpoint == xl {
+        @media only screen and (min-width: $bp-xlarge) { @content };    //1800
+    }
+}
+

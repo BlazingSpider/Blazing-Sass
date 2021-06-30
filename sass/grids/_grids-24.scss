@@ -1,0 +1,482 @@
+/*!
+Blazing v0.1.0
+Copyright 2021 Blazing Spider Web Solutions
+Licensed under the BSD License.
+https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
+*/
+
+.blazing-u-1-24, .blazing-u-2-24, .blazing-u-3-24, .blazing-u-4-24, .blazing-u-5-24, .blazing-u-6-24, .blazing-u-7-24, .blazing-u-8-24, .blazing-u-9-24, .blazing-u-10-24, .blazing-u-11-24, .blazing-u-12-24, .blazing-u-13-24, .blazing-u-14-24, .blazing-u-15-24, .blazing-u-16-24, .blazing-u-17-24, .blazing-u-18-24, .blazing-u-19-24, .blazing-u-20-24, .blazing-u-21-24, .blazing-u-22-24, .blazing-u-23-24, .blazing-u-24-24 {
+  display: inline-block;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+}
+
+.blazing-u-1-24 {
+  width: 4.1667%;
+}
+
+.blazing-u-2-24 {
+  width: 8.3333%;
+}
+
+.blazing-u-3-24 {
+  width: 12.5000%;
+}
+
+.blazing-u-4-24 {
+  width: 16.6667%;
+}
+
+.blazing-u-5-24 {
+  width: 20.8333%;
+}
+
+.blazing-u-6-24 {
+  width: 25%;
+}
+
+.blazing-u-7-24 {
+  width: 29.1667%;
+}
+
+.blazing-u-8-24 {
+  width: 33.3333%;
+}
+
+.blazing-u-9-24 {
+  width: 37.5000%;
+}
+
+.blazing-u-10-24 {
+  width: 41.6667%;
+}
+
+.blazing-u-11-24 {
+  width: 45.8333%;
+}
+
+.blazing-u-12-24 {
+  width: 50%;
+}
+
+.blazing-u-13-24 {
+  width: 54.1667%;
+}
+
+.blazing-u-14-24 {
+  width: 58.3333%;
+}
+
+.blazing-u-15-24 {
+  width: 62.5000%;
+}
+
+.blazing-u-16-24 {
+  width: 66.6667%;
+}
+
+.blazing-u-17-24 {
+  width: 70.8333%;
+}
+
+.blazing-u-18-24 {
+  width: 75%;
+}
+
+.blazing-u-19-24 {
+  width: 79.1667%;
+}
+
+.blazing-u-20-24 {
+  width: 83.3333%;
+}
+
+.blazing-u-21-24 {
+  width: 87.5000%;
+}
+
+.blazing-u-22-24 {
+  width: 91.6667%;
+}
+
+.blazing-u-23-24 {
+  width: 95.8333%;
+}
+
+@include respond(lg) { // width < 1200?
+  .blazing-u-lg-1-24 {
+    width: 4.1667%;
+  }
+
+  .blazing-u-lg-2-24 {
+    width: 8.3333%;
+  }
+
+  .blazing-u-lg-3-24 {
+    width: 12.5000%;
+  }
+
+  .blazing-u-lg-4-24 {
+    width: 16.6667%;
+  }
+
+  .blazing-u-lg-5-24 {
+    width: 20.8333%;
+  }
+
+  .blazing-u-lg-6-24 {
+    width: 25%;
+  }
+
+  .blazing-u-lg-7-24 {
+    width: 29.1667%;
+  }
+
+  .blazing-u-lg-8-24 {
+    width: 33.3333%;
+  }
+
+  .blazing-u-lg-9-24 {
+    width: 37.5000%;
+  }
+
+  .blazing-u-lg-10-24 {
+    width: 41.6667%;
+  }
+
+  .blazing-u-lg-11-24 {
+    width: 45.8333%;
+  }
+
+  .blazing-u-lg-12-24 {
+    width: 50%;
+  }
+
+  .blazing-u-lg-13-24 {
+    width: 54.1667%;
+  }
+
+  .blazing-u-lg-14-24 {
+    width: 58.3333%;
+  }
+
+  .blazing-u-lg-15-24 {
+    width: 62.5000%;
+  }
+
+  .blazing-u-lg-16-24 {
+    width: 66.6667%;
+  }
+
+  .blazing-u-lg-17-24 {
+    width: 70.8333%;
+  }
+
+  .blazing-u-lg-18-24 {
+    width: 75%;
+  }
+
+  .blazing-u-lg-19-24 {
+    width: 79.1667%;
+  }
+
+  .blazing-u-lg-20-24 {
+    width: 83.3333%;
+  }
+
+  .blazing-u-lg-21-24 {
+    width: 87.5000%;
+  }
+
+  .blazing-u-lg-22-24 {
+    width: 91.6667%;
+  }
+
+  .blazing-u-lg-23-24 {
+    width: 95.8333%;
+  }
+}
+
+@include respond(md) { // width < 900?
+  .blazing-u-md-1-24 {
+    width: 4.1667%;
+  }
+
+  .blazing-u-md-2-24 {
+    width: 8.3333%;
+  }
+
+  .blazing-u-md-3-24 {
+    width: 12.5000%;
+  }
+
+  .blazing-u-md-4-24 {
+    width: 16.6667%;
+  }
+
+  .blazing-u-md-5-24 {
+    width: 20.8333%;
+  }
+
+  .blazing-u-md-6-24 {
+    width: 25%;
+  }
+
+  .blazing-u-md-7-24 {
+    width: 29.1667%;
+  }
+
+  .blazing-u-md-8-24 {
+    width: 33.3333%;
+  }
+
+  .blazing-u-md-9-24 {
+    width: 37.5000%;
+  }
+
+  .blazing-u-md-10-24 {
+    width: 41.6667%;
+  }
+
+  .blazing-u-md-11-24 {
+    width: 45.8333%;
+  }
+
+  .blazing-u-md-12-24 {
+    width: 50%;
+  }
+
+  .blazing-u-md-13-24 {
+    width: 54.1667%;
+  }
+
+  .blazing-u-md-14-24 {
+    width: 58.3333%;
+  }
+
+  .blazing-u-md-15-24 {
+    width: 62.5000%;
+  }
+
+  .blazing-u-md-16-24 {
+    width: 66.6667%;
+  }
+
+  .blazing-u-md-17-24 {
+    width: 70.8333%;
+  }
+
+  .blazing-u-md-18-24 {
+    width: 75%;
+  }
+
+  .blazing-u-md-19-24 {
+    width: 79.1667%;
+  }
+
+  .blazing-u-md-20-24 {
+    width: 83.3333%;
+  }
+
+  .blazing-u-md-21-24 {
+    width: 87.5000%;
+  }
+
+  .blazing-u-md-22-24 {
+    width: 91.6667%;
+  }
+
+  .blazing-u-md-23-24 {
+    width: 95.8333%;
+  }
+}
+
+@include respond(sm) { // width < 1200?
+  .blazing-u-sm-1-24 {
+    width: 4.1667%;
+  }
+
+  .blazing-u-sm-2-24 {
+    width: 8.3333%;
+  }
+
+  .blazing-u-sm-3-24 {
+    width: 12.5000%;
+  }
+
+  .blazing-u-sm-4-24 {
+    width: 16.6667%;
+  }
+
+  .blazing-u-sm-5-24 {
+    width: 20.8333%;
+  }
+
+  .blazing-u-sm-6-24 {
+    width: 25%;
+  }
+
+  .blazing-u-sm-7-24 {
+    width: 29.1667%;
+  }
+
+  .blazing-u-sm-8-24 {
+    width: 33.3333%;
+  }
+
+  .blazing-u-sm-9-24 {
+    width: 37.5000%;
+  }
+
+  .blazing-u-sm-10-24 {
+    width: 41.6667%;
+  }
+
+  .blazing-u-sm-11-24 {
+    width: 45.8333%;
+  }
+
+  .blazing-u-sm-12-24 {
+    width: 50%;
+  }
+
+  .blazing-u-sm-13-24 {
+    width: 54.1667%;
+  }
+
+  .blazing-u-sm-14-24 {
+    width: 58.3333%;
+  }
+
+  .blazing-u-sm-15-24 {
+    width: 62.5000%;
+  }
+
+  .blazing-u-sm-16-24 {
+    width: 66.6667%;
+  }
+
+  .blazing-u-sm-17-24 {
+    width: 70.8333%;
+  }
+
+  .blazing-u-sm-18-24 {
+    width: 75%;
+  }
+
+  .blazing-u-sm-19-24 {
+    width: 79.1667%;
+  }
+
+  .blazing-u-sm-20-24 {
+    width: 83.3333%;
+  }
+
+  .blazing-u-sm-21-24 {
+    width: 87.5000%;
+  }
+
+  .blazing-u-sm-22-24 {
+    width: 91.6667%;
+  }
+
+  .blazing-u-sm-23-24 {
+    width: 95.8333%;
+  }
+}
+
+@include respond(xl) {
+  .blazing-u-xl-1-24 {
+    width: 4.1667%;
+  }
+
+  .blazing-u-xl-2-24 {
+    width: 8.3333%;
+  }
+
+  .blazing-u-xl-3-24 {
+    width: 12.5000%;
+  }
+
+  .blazing-u-xl-4-24 {
+    width: 16.6667%;
+  }
+
+  .blazing-u-xl-5-24 {
+    width: 20.8333%;
+  }
+
+  .blazing-u-xl-6-24 {
+    width: 25%;
+  }
+
+  .blazing-u-xl-7-24 {
+    width: 29.1667%;
+  }
+
+  .blazing-u-xl-8-24 {
+    width: 33.3333%;
+  }
+
+  .blazing-u-xl-9-24 {
+    width: 37.5000%;
+  }
+
+  .blazing-u-xl-10-24 {
+    width: 41.6667%;
+  }
+
+  .blazing-u-xl-11-24 {
+    width: 45.8333%;
+  }
+
+  .blazing-u-xl-12-24 {
+    width: 50%;
+  }
+
+  .blazing-u-xl-13-24 {
+    width: 54.1667%;
+  }
+
+  .blazing-u-xl-14-24 {
+    width: 58.3333%;
+  }
+
+  .blazing-u-xl-15-24 {
+    width: 62.5000%;
+  }
+
+  .blazing-u-xl-16-24 {
+    width: 66.6667%;
+  }
+
+  .blazing-u-xl-17-24 {
+    width: 70.8333%;
+  }
+
+  .blazing-u-xl-18-24 {
+    width: 75%;
+  }
+
+  .blazing-u-xl-19-24 {
+    width: 79.1667%;
+  }
+
+  .blazing-u-xl-20-24 {
+    width: 83.3333%;
+  }
+
+  .blazing-u-xl-21-24 {
+    width: 87.5000%;
+  }
+
+  .blazing-u-xl-22-24 {
+    width: 91.6667%;
+  }
+
+  .blazing-u-xl-23-24 {
+    width: 95.8333%;
+  }
+}
