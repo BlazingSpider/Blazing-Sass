@@ -1,0 +1,14 @@
+{
+    "name": "massoud/blazing-sass",
+    "description": "A Concise Sass powered CSS framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Massoud Shakeri",
+            "email": "massoud@blazingspider.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
