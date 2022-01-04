@@ -7,15 +7,16 @@
     "scss",
     "sass"
   ],
+  "files": [
+    "composer.json",
+    "sass/**/*"
+  ],
   "homepage": "https://github.com/BlazingSpider/Blazing-Sass.git",
   "bugs": {
     "url": "https://github.com/BlazingSpider/Blazing-Sass.git/issues"
   },
   "license": "MIT",
   "author": "Massoud Shakeri <massoud@blazingspider.com>",
-  "files": [
-    "vendor"
-  ],
   "main": "_blazing.scss",
   "repository": {
     "type": "git",
