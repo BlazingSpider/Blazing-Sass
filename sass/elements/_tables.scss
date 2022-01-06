@@ -5,7 +5,7 @@ Licensed under the BSD License.
 https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
 */
 
-.blazing-table {
+.table {
   /* Remove spacing between table cells (from Normalize.css) */
   border-collapse: collapse;
   border-spacing: 0;
@@ -52,7 +52,7 @@ striping:
    odd  - #f2f2f2 (light gray)
 */
 
-.blazing-table-odd td, .blazing-table-striped tr:nth-child(2n-1) td {
+.table-odd td, .table-striped tr:nth-child(2n-1) td {
   background-color: #f2f2f2;
 }
 
@@ -60,7 +60,7 @@ striping:
 
 /* BORDERED TABLES */
 
-.blazing-table-bordered {
+.table-bordered {
   td {
     border-bottom: 1px solid #cbcbcb;
   }
@@ -72,7 +72,7 @@ striping:
 
 /* HORIZONTAL BORDERED TABLES */
 
-.blazing-table-horizontal {
+.table-horizontal {
   td, th {
     border-width: 0 0 1px 0;
     border-bottom: 1px solid #cbcbcb;

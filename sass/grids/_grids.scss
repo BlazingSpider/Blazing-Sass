@@ -6,7 +6,7 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
 */
 /*csslint regex-selectors:false, known-properties:false, duplicate-properties:false*/
 
-.blazing-g {
+.row {
   letter-spacing: -0.31em;
 
   /* Webkit: collapse white-space between units */
@@ -16,7 +16,7 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
 
     /*
     Sets the font stack to fonts known to work properly with the above letter
-    and word spacings. See: https://github.com/blazing-css/pure/issues/41/
+    and word spacings.
 
     The following font stack makes Pure Grids work on all known environments.
 
@@ -48,7 +48,7 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
 
 /* IE10 display: -ms-flexbox (and display: flex in IE 11) does not work inside a table; fall back to block and rely on font hack */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  table .blazing-g {
+  table .row {
     display: block;
   }
 }
@@ -58,11 +58,11 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
    and is not required in markup.
 */
 
-.opera-only :-o-prefocus, .blazing-g {
+.opera-only :-o-prefocus, .row {
   word-spacing: -0.43em;
 }
 
-.blazing-u {
+.col {
   display: inline-block;
   letter-spacing: normal;
   word-spacing: normal;
@@ -75,11 +75,7 @@ Resets the font family back to the OS/browser's default sans-serif font,
 this the same font stack that Normalize.css sets for the `body`.
 */
 
-.blazing-g [class*="blazing-u"] {
-  font-family: sans-serif;
-}
-
-.blazing-u-1, .blazing-u-1-1, .blazing-u-1-2 {
+.col-1, .col-1-1, .col-1-2 {
   display: inline-block;
   letter-spacing: normal;
   word-spacing: normal;
@@ -87,50 +83,50 @@ this the same font stack that Normalize.css sets for the `body`.
   text-rendering: auto;
 }
 
-.blazing-u-1-2 {
+.col-1-2 {
   width: 50%;
 }
 
-.blazing-u-1, .blazing-u-1-1 {
+.col-1, .col-1-1 {
   width: 100%;
 }
 
 @include respond(lg) { // width < 1200?
-  .blazing-u-lg-1-2 {
+  .col-lg-1-2 {
     width: 50%;
   }
 
-  .blazing-u-lg-1, .blazing-u-lg-1-1 {
+  .col-lg-1, .col-lg-1-1 {
     width: 100%;
   }
 }
 
 @include respond(md) { // width < 900?
-  .blazing-u-md-1-2 {
+  .col-md-1-2 {
     width: 50%;
   }
 
-  .blazing-u-md-1, .blazing-u-md-1-1 {
+  .col-md-1, .col-md-1-1 {
     width: 100%;
   }
 }
 
 @include respond(sm) { // width < 1200?
-  .blazing-u-sm-1-2 {
+  .col-sm-1-2 {
     width: 50%;
   }
 
-  .blazing-u-sm-1, .blazing-u-sm-1-1 {
+  .col-sm-1, .col-sm-1-1 {
     width: 100%;
   }
 }
 
 @include respond(xl) {
-  .blazing-u-xl-1-2 {
+  .col-xl-1-2 {
     width: 50%;
   }
 
-  .blazing-u-xl-1, .blazing-u-xl-1-1 {
+  .col-xl-1, .col-xl-1-1 {
     width: 100%;
   }
 }

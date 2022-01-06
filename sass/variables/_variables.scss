@@ -32,8 +32,9 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
     --line: 1px solid var(--color-grey-light-2);
 }
 
-$bp-xlarge: 112.5em;    // 1100px
-$bp-large: 75em;     // 1200px
-$bp-medium: 56.25em;   // 900px
-$bp-small: 37.5em;     // 600px
+$bp-small: 36em;     // 576px
+$bp-medium: 48em;   // 768px
+$bp-large: 62em;     // 992px
+$bp-xlarge: 75em;    // 1200px
+$bp-xxlarge: 112.5em;    // 1800px
 

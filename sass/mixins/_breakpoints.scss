@@ -7,38 +7,43 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
 
 // MEDIA QUERY MANAGER
 /*
-0 - 600px:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800] is where our normal styles apply
-1800px + :      Big desktop
+0 - 576px:      Extra Small
+576px - 768px:    Small
+768px - 992px:   Medium
+992px - 1200:    Large
+1200px - 1800:   xLarge
+1800px + :      xxlarge
 
 $breakpoint arguement choices:
 - sm
 - md
 - lg
-- big-desktop
+- xl
+- xxl
 
-ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
 @mixin respond($breakpoint) {
     // sm
     @if $breakpoint == sm {
-        @media only screen and (max-width: $bp-small) { @content };    //600px
+        @media only screen and (min-width: $bp-small) { @content };    //576px
     }
     // md
     @if $breakpoint == md {
-        @media only screen and (max-width: $bp-medium) { @content };     //900px
+        @media only screen and (min-width: $bp-medium) { @content };     //768px
     }
     // lg
     @if $breakpoint == lg {
-        @media only screen and (max-width: $bp-large) { @content };    //1200px
+        @media only screen and (min-width: $bp-large) { @content };    //992px
     }
     // xl
     @if $breakpoint == xl {
-        @media only screen and (min-width: $bp-xlarge) { @content };    //1800
+        @media only screen and (min-width: $bp-xlarge) { @content };    //1200px
+    }
+    // xxl
+    @if $breakpoint == xxl {
+        @media only screen and (min-width: $bp-xxlarge) { @content };    //1800px
     }
 }
 

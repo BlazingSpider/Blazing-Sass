@@ -4,7 +4,7 @@ Copyright 2021 Blazing Spider Web Solutions
 Licensed under the BSD License.
 https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
 */
-.blazing-u-1-5, .blazing-u-2-5, .blazing-u-3-5, .blazing-u-4-5 {
+.col-1-5, .col-2-5, .col-3-5, .col-4-5 {
   display: inline-block;
   letter-spacing: normal;
   word-spacing: normal;
@@ -12,90 +12,90 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
   text-rendering: auto;
 }
 
-.blazing-u-1-5 {
+.col-1-5 {
   width: 20%;
 }
 
-.blazing-u-2-5 {
+.col-2-5 {
   width: 40%;
 }
 
-.blazing-u-3-5 {
+.col-3-5 {
   width: 60%;
 }
 
-.blazing-u-4-5 {
+.col-4-5 {
   width: 80%;
 }
 
 @include respond(lg) { // width < 1200?
-  .blazing-u-lg-1-5 {
+  .col-lg-1-5 {
     width: 20%;
   }
 
-  .blazing-u-lg-2-5 {
+  .col-lg-2-5 {
     width: 40%;
   }
 
-  .blazing-u-lg-3-5 {
+  .col-lg-3-5 {
     width: 60%;
   }
 
-  .blazing-u-lg-4-5 {
+  .col-lg-4-5 {
     width: 80%;
   }
 }
 
 @include respond(md) { // width < 900?
-  .blazing-u-md-1-5 {
+  .col-md-1-5 {
     width: 20%;
   }
 
-  .blazing-u-md-2-5 {
+  .col-md-2-5 {
     width: 40%;
   }
 
-  .blazing-u-md-3-5 {
+  .col-md-3-5 {
     width: 60%;
   }
 
-  .blazing-u-md-4-5 {
+  .col-md-4-5 {
     width: 80%;
   }
 }
 
 @include respond(sm) { // width < 1200?
-  .blazing-u-sm-1-5 {
+  .col-sm-1-5 {
     width: 20%;
   }
 
-  .blazing-u-sm-2-5 {
+  .col-sm-2-5 {
     width: 40%;
   }
 
-  .blazing-u-sm-3-5 {
+  .col-sm-3-5 {
     width: 60%;
   }
 
-  .blazing-u-sm-4-5 {
+  .col-sm-4-5 {
     width: 80%;
   }
 }
 
 @include respond(xl) {
-  .blazing-u-xl-1-5 {
+  .col-xl-1-5 {
     width: 20%;
   }
 
-  .blazing-u-xl-2-5 {
+  .col-xl-2-5 {
     width: 40%;
   }
 
-  .blazing-u-xl-3-5 {
+  .col-xl-3-5 {
     width: 60%;
   }
 
-  .blazing-u-xl-4-5 {
+  .col-xl-4-5 {
     width: 80%;
   }
 }

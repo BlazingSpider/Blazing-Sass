@@ -4,6 +4,8 @@ Copyright 2021 Blazing Spider Web Solutions
 Licensed under the BSD License.
 https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
 */
+@import 'html5-boilerplate/normalize';
+@import 'html5-boilerplate/main';
 
 @import 'variables/variables';
 @import 'mixins/breakpoints';

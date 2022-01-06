@@ -12,7 +12,7 @@ the padding. We explicitly set the box-model for select elements to border-box,
 so we can ignore the csslint warning.
 */
 
-.blazing-form {
+.form-group {
   input {
     &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"] {
       padding: 0.5em 0.6em;
@@ -78,7 +78,7 @@ so we can ignore the csslint warning.
     }
   }
 
-  .blazing-checkbox, .blazing-radio {
+  .form-check, .form-radio {
     margin: 0.5em 0;
     display: block;
   }
@@ -185,7 +185,7 @@ Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
 since IE8 won't execute CSS that contains a CSS3 selector.
 */
 
-.blazing-form-stacked {
+.form-group-stacked {
   input {
     &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"], &[type="file"] {
       display: block;
@@ -204,24 +204,24 @@ Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
 since IE8 won't execute CSS that contains a CSS3 selector.
 */
 
-.blazing-form-aligned {
+.form-group-aligned {
   input, textarea, select {
     display: inline-block;
     vertical-align: middle;
   }
 }
 
-.blazing-form-message-inline {
+.form-group-message-inline {
   display: inline-block;
   vertical-align: middle;
 }
 
-.blazing-form-aligned {
+.form-group-aligned {
   textarea {
     vertical-align: top;
   }
 
-  .blazing-control-group {
+  .form-control-group {
     margin-bottom: 0.5em;
 
     label {
@@ -233,7 +233,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     }
   }
 
-  .blazing-controls {
+  .form-controls {
     margin: 1.5em 0 0 11em;
   }
 }
@@ -242,13 +242,13 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 /* Rounded Inputs */
 
-.blazing-form {
-  input.blazing-input-rounded, .blazing-input-rounded {
+.form-group {
+  input.form-input-rounded, .form-input-rounded {
     border-radius: 2em;
     padding: 0.5em 1em;
   }
 
-  .blazing-group {
+  .row {
     fieldset {
       margin-bottom: 10px;
     }
@@ -289,27 +289,27 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     }
   }
 
-  .blazing-input-1 {
+  .form-input-1 {
     width: 100%;
   }
 
-  .blazing-input-3-4 {
+  .form-input-3-4 {
     width: 75%;
   }
 
-  .blazing-input-2-3 {
+  .form-input-2-3 {
     width: 66%;
   }
 
-  .blazing-input-1-2 {
+  .form-input-1-2 {
     width: 50%;
   }
 
-  .blazing-input-1-3 {
+  .form-input-1-3 {
     width: 33%;
   }
 
-  .blazing-input-1-4 {
+  .form-input-1-4 {
     width: 25%;
   }
 }
@@ -318,7 +318,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 /* Inline help for forms */
 
-.blazing-form-message-inline {
+.form-group-message-inline {
   display: inline-block;
   padding-left: 0.3em;
   color: #666;
@@ -328,14 +328,14 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 /* Block help for forms */
 
-.blazing-form-message {
+.form-group-message {
   display: block;
   color: #666;
   font-size: 0.875em;
 }
 
 @media only screen and (max-width: 480px) {
-  .blazing-form {
+  .form-group {
     button[type="submit"] {
       margin: 0.7em 0 0;
     }
@@ -353,26 +353,26 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     }
   }
 
-  .blazing-group input {
+  .row input {
     &:not([type]), &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"] {
       margin-bottom: 0;
     }
   }
 
-  .blazing-form-aligned {
-    .blazing-control-group label {
+  .form-group-aligned {
+    .form-control-group label {
       margin-bottom: 0.3em;
       text-align: left;
       display: block;
       width: 100%;
     }
 
-    .blazing-controls {
+    .form-controls {
       margin: 1.5em 0 0 0;
     }
   }
 
-  .blazing-form-message-inline, .blazing-form-message {
+  .form-group-message-inline, .form-group-message {
     display: block;
     font-size: 0.75em;
 

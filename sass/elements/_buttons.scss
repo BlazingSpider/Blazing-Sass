@@ -5,7 +5,7 @@ Licensed under the BSD License.
 https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
 */
 
-.blazing-button {
+.btn {
   /* Structure */
   display: inline-block;
   line-height: normal;
@@ -29,9 +29,9 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
 
 /* Firefox: Get rid of the inner focus border */
 
-/* Inherit .blazing-g styles */
+/* Inherit .row styles */
 
-.blazing-button-group {
+.btn-group {
   letter-spacing: -0.31em;
 
   /* Webkit: collapse white-space between units */
@@ -44,10 +44,10 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
   word-spacing: -0.43em;
 }
 
-.blazing-button-group {
+.btn-group {
   word-spacing: -0.43em;
 
-  .blazing-button {
+  .btn {
     letter-spacing: normal;
     word-spacing: normal;
     vertical-align: top;
@@ -57,7 +57,7 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
 
 /*csslint outline-none:false*/
 
-.blazing-button {
+.btn {
   font-family: inherit;
   font-size: 100%;
   padding: 0.5em 1em;
@@ -68,12 +68,12 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
   border-radius: 2px;
 }
 
-.blazing-button-hover {
+.btn-hover {
   background-image: var(--button-gradient-webkit);
   background-image: var(--button-gradient);
 }
 
-.blazing-button {
+.btn {
   &:hover {
     background-image: var(--button-gradient-webkit);
     background-image: var(--button-gradient);
@@ -86,13 +86,13 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
   }
 }
 
-.blazing-button-active {
+.btn-active {
   -webkit-box-shadow: var(--button-shadow);
   box-shadow: var(--button-shadow);
   border-color: #000;
 }
 
-.blazing-button {
+.btn {
   &:active {
     -webkit-box-shadow: var(--button-shadow);
     box-shadow: var(--button-shadow);
@@ -110,7 +110,7 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
   }
 }
 
-.blazing-button-disabled {
+.btn-disabled {
   border: none;
   background-image: none;
   opacity: 0.40;
@@ -130,17 +130,17 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
   }
 }
 
-.blazing-button-hidden {
+.btn-hidden {
   display: none;
 }
 
-.blazing-button-primary, .blazing-button-selected {
+.btn-primary, .btn-selected {
   background-color: rgb(0, 120, 231);
   color: #fff;
 }
 
 a {
-  &.blazing-button-primary, &.blazing-button-selected {
+  &.btn-primary, &.btn-selected {
     background-color: rgb(0, 120, 231);
     color: #fff;
   }
@@ -148,7 +148,7 @@ a {
 
 /* Button Groups */
 
-.blazing-button-group .blazing-button {
+.btn-group .btn {
   margin: 0;
   border-radius: 0;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
