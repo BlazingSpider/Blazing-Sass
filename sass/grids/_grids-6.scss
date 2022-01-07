@@ -13,11 +13,11 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
 }
 
 .col-1-6 {
-  width: 16.6667%;
+  width: 16.666%;
 }
 
 .col-2-6 {
-  width: 33.3333%;
+  width: 33.333%;
 }
 
 .col-3-6 {
@@ -25,86 +25,20 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
 }
 
 .col-4-6 {
-  width: 66.6667%;
+  width: 66.666%;
 }
 
 .col-5-6 {
-  width: 83.3333%;
-}
-
-@include respond(lg) { // width < 1200?
-  .col-lg-1-6 {
-    width: 16.6667%;
-  }
-
-  .col-lg-2-6 {
-    width: 33.3333%;
-  }
-
-  .col-lg-3-6 {
-    width: 50%;
-  }
-
-  .col-lg-4-6 {
-    width: 66.6667%;
-  }
-
-  .col-lg-5-6 {
-    width: 83.3333%;
-  }
-}
-
-@include respond(md) { // width < 900?
-  .col-md-1-6 {
-    width: 16.6667%;
-  }
-
-  .col-md-2-6 {
-    width: 33.3333%;
-  }
-
-  .col-md-3-6 {
-    width: 50%;
-  }
-
-  .col-md-4-6 {
-    width: 66.6667%;
-  }
-
-  .col-md-5-6 {
-    width: 83.3333%;
-  }
-}
-
-@include respond(sm) { // width < 1200?
-  .col-sm-1-6 {
-    width: 16.6667%;
-  }
-
-  .col-sm-2-6 {
-    width: 33.3333%;
-  }
-
-  .col-sm-3-6 {
-    width: 50%;
-  }
-
-  .col-sm-4-6 {
-    width: 66.6667%;
-  }
-
-  .col-sm-5-6 {
-    width: 83.3333%;
-  }
+  width: 83.333%;
 }
 
 @include respond(xl) {
   .col-xl-1-6 {
-    width: 16.6667%;
+    width: 16.666%;
   }
 
   .col-xl-2-6 {
-    width: 33.3333%;
+    width: 33.333%;
   }
 
   .col-xl-3-6 {
@@ -112,10 +46,76 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
   }
 
   .col-xl-4-6 {
-    width: 66.6667%;
+    width: 66.666%;
   }
 
   .col-xl-5-6 {
-    width: 83.3333%;
+    width: 83.333%;
+  }
+}
+
+@include respond(lg) { // width < 1200?
+  .col-lg-1-6 {
+    width: 16.666%;
+  }
+
+  .col-lg-2-6 {
+    width: 33.333%;
+  }
+
+  .col-lg-3-6 {
+    width: 50%;
+  }
+
+  .col-lg-4-6 {
+    width: 66.666%;
+  }
+
+  .col-lg-5-6 {
+    width: 83.333%;
+  }
+}
+
+@include respond(md) { // width < 900?
+  .col-md-1-6 {
+    width: 16.666%;
+  }
+
+  .col-md-2-6 {
+    width: 33.333%;
+  }
+
+  .col-md-3-6 {
+    width: 50%;
+  }
+
+  .col-md-4-6 {
+    width: 66.666%;
+  }
+
+  .col-md-5-6 {
+    width: 83.333%;
+  }
+}
+
+@include respond(sm) { // width < 1200?
+  .col-sm-1-6 {
+    width: 16.666%;
+  }
+
+  .col-sm-2-6 {
+    width: 33.333%;
+  }
+
+  .col-sm-3-6 {
+    width: 50%;
+  }
+
+  .col-sm-4-6 {
+    width: 66.666%;
+  }
+
+  .col-sm-5-6 {
+    width: 83.333%;
   }
 }

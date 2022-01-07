@@ -13,49 +13,49 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
 }
 
 .col-1-3 {
-  width: 33.3333%;
+  width: 33.333%;
 }
 
 .col-2-3 {
-  width: 66.6667%;
+  width: 66.666%;
+}
+
+@include respond(xl) {
+  .col-xl-1-3 {
+    width: 33.333%;
+  }
+
+  .col-xl-2-3 {
+    width: 66.666%;
+  }
 }
 
 @include respond(lg) { // width < 1200?
   .col-lg-1-3 {
-    width: 33.3333%;
+    width: 33.333%;
   }
 
   .col-lg-2-3 {
-    width: 66.6667%;
+    width: 66.666%;
   }
 }
 
 @include respond(md) { // width < 900?
   .col-md-1-3 {
-    width: 33.3333%;
+    width: 33.333%;
   }
 
   .col-md-2-3 {
-    width: 66.6667%;
+    width: 66.666%;
   }
 }
 
 @include respond(sm) { // width < 1200?
   .col-sm-1-3 {
-    width: 33.3333%;
+    width: 33.333%;
   }
 
   .col-sm-2-3 {
-    width: 66.6667%;
-  }
-}
-
-@include respond(xl) {
-  .col-xl-1-3 {
-    width: 33.3333%;
-  }
-
-  .col-xl-2-3 {
-    width: 66.6667%;
+    width: 66.666%;
   }
 }

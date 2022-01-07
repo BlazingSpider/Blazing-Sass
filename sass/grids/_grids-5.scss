@@ -28,6 +28,24 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
   width: 80%;
 }
 
+@include respond(xl) {
+  .col-xl-1-5 {
+    width: 20%;
+  }
+
+  .col-xl-2-5 {
+    width: 40%;
+  }
+
+  .col-xl-3-5 {
+    width: 60%;
+  }
+
+  .col-xl-4-5 {
+    width: 80%;
+  }
+}
+
 @include respond(lg) { // width < 1200?
   .col-lg-1-5 {
     width: 20%;
@@ -78,24 +96,6 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
   }
 
   .col-sm-4-5 {
-    width: 80%;
-  }
-}
-
-@include respond(xl) {
-  .col-xl-1-5 {
-    width: 20%;
-  }
-
-  .col-xl-2-5 {
-    width: 40%;
-  }
-
-  .col-xl-3-5 {
-    width: 60%;
-  }
-
-  .col-xl-4-5 {
     width: 80%;
   }
 }

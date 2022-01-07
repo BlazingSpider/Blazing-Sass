@@ -91,7 +91,17 @@ this the same font stack that Normalize.css sets for the `body`.
   width: 100%;
 }
 
-@include respond(lg) { // width < 1200?
+@include respond(xl) {
+  .col-xl-1-2 {
+    width: 50%;
+  }
+
+  .col-xl-1, .col-xl-1-1 {
+    width: 100%;
+  }
+}
+
+@include respond(lg) { // width < 1200
   .col-lg-1-2 {
     width: 50%;
   }
@@ -117,16 +127,6 @@ this the same font stack that Normalize.css sets for the `body`.
   }
 
   .col-sm-1, .col-sm-1-1 {
-    width: 100%;
-  }
-}
-
-@include respond(xl) {
-  .col-xl-1-2 {
-    width: 50%;
-  }
-
-  .col-xl-1, .col-xl-1-1 {
     width: 100%;
   }
 }
