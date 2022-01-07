@@ -12,8 +12,8 @@
     background-color: $card-bg;
     background-clip: border-box;
     border: $card-border-width solid $card-border-color;
-    @include border-radius($card-border-radius);
-    @include box-shadow($card-box-shadow);
+    border-radius: $card-border-radius;
+    box-shadow: $card-box-shadow;
   
     > hr {
       margin-right: 0;
@@ -26,13 +26,15 @@
   
       &:first-child {
         border-top-width: 0;
-        @include border-top-radius($card-inner-border-radius);
+        border-top-left-radius: $card-inner-border-radius;
+        border-top-right-radius: $card-inner-border-radius;
       }
   
       &:last-child  {
         border-bottom-width: 0;
-        @include border-bottom-radius($card-inner-border-radius);
-      }
+        border-bottom-right-radius: $card-inner-border-radius;
+        border-bottom-left-radius: $card-inner-border-radius;
+          }
     }
   
     // Due to specificity of the above selector (`.card > .list-group`), we must
@@ -66,7 +68,7 @@
   
   .card-link {
     &:hover {
-      text-decoration: if($link-hover-decoration == underline, none, null);
+      text-decoration: underline;
     }
   
     + .card-link {
@@ -86,7 +88,7 @@
     border-bottom: $card-border-width solid $card-border-color;
   
     &:first-child {
-      @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
+      border-radius: $card-inner-border-radius $card-inner-border-radius 0 0;
     }
   }
   
@@ -97,7 +99,7 @@
     border-top: $card-border-width solid $card-border-color;
   
     &:last-child {
-      @include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);
+      border-radius: 0 0 $card-inner-border-radius $card-inner-border-radius;
     }
   }
   
@@ -111,13 +113,10 @@
     margin-bottom: -$card-cap-padding-y;
     margin-left: -$card-cap-padding-x * .5;
     border-bottom: 0;
-  
-    @if $nav-tabs-link-active-bg != $card-bg {
       .nav-link.active {
         background-color: $card-bg;
         border-bottom-color: $card-bg;
       }
-    }
   }
   
   .card-header-pills {
@@ -133,7 +132,7 @@
     bottom: 0;
     left: 0;
     padding: $card-img-overlay-padding;
-    @include border-radius($card-inner-border-radius);
+    border-radius: $card-inner-border-radius;
   }
   
   .card-img,
@@ -144,13 +143,15 @@
   
   .card-img,
   .card-img-top {
-    @include border-top-radius($card-inner-border-radius);
+    border-top-left-radius: $card-inner-border-radius;
+    border-top-right-radius: $card-inner-border-radius;
   }
   
   .card-img,
   .card-img-bottom {
-    @include border-bottom-radius($card-inner-border-radius);
-  }
+  border-bottom-right-radius: $card-inner-border-radius;
+  border-bottom-left-radius: $card-inner-border-radius;
+}
   
   
   //
@@ -164,7 +165,7 @@
       margin-bottom: $card-group-margin;
     }
   
-    @include media-breakpoint-up(sm) {
+    @include respond(sm) {
       display: flex;
       flex-flow: row wrap;
       // The child selector allows nested `.card` within `.card-group`
@@ -180,10 +181,10 @@
         }
   
         // Handle rounded corners
-        @if $enable-rounded {
           &:not(:last-child) {
-            @include border-end-radius(0);
-  
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+          
             .card-img-top,
             .card-header {
               // stylelint-disable-next-line property-disallowed-list
@@ -197,8 +198,9 @@
           }
   
           &:not(:first-child) {
-            @include border-start-radius(0);
-  
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+          
             .card-img-top,
             .card-header {
               // stylelint-disable-next-line property-disallowed-list
@@ -210,7 +212,6 @@
               border-bottom-left-radius: 0;
             }
           }
-        }
       }
     }
   }
