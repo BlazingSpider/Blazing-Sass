@@ -703,15 +703,9 @@ html {
   font-size: 75%;
 }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 36em) {
   html {
-    font-size: 100%;
-  }
-}
-
-@media only screen and (min-width: 62em) {
-  html {
-    font-size: 93.75%;
+    font-size: 81.25%;
   }
 }
 
@@ -721,9 +715,15 @@ html {
   }
 }
 
-@media only screen and (min-width: 36em) {
+@media only screen and (min-width: 62em) {
   html {
-    font-size: 81.25%;
+    font-size: 93.75%;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  html {
+    font-size: 100%;
   }
 }
 
@@ -848,24 +848,13 @@ this the same font stack that Normalize.css sets for the `body`.
   width: 100%;
 }
 
-@media only screen and (min-width: 75em) {
-  .col-xl-1-2 {
+@media only screen and (min-width: 36em) {
+  .col-sm-1-2 {
     width: 50%;
   }
 
-  .col-xl-1,
-  .col-xl-1-1 {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 62em) {
-  .col-lg-1-2 {
-    width: 50%;
-  }
-
-  .col-lg-1,
-  .col-lg-1-1 {
+  .col-sm-1,
+  .col-sm-1-1 {
     width: 100%;
   }
 }
@@ -881,13 +870,24 @@ this the same font stack that Normalize.css sets for the `body`.
   }
 }
 
-@media only screen and (min-width: 36em) {
-  .col-sm-1-2 {
+@media only screen and (min-width: 62em) {
+  .col-lg-1-2 {
     width: 50%;
   }
 
-  .col-sm-1,
-  .col-sm-1-1 {
+  .col-lg-1,
+  .col-lg-1-1 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .col-xl-1-2 {
+    width: 50%;
+  }
+
+  .col-xl-1,
+  .col-xl-1-1 {
     width: 100%;
   }
 }
@@ -3259,5 +3259,47 @@ striping:
   .card-group > .card:not(:first-child) .card-img-bottom,
   .card-group > .card:not(:first-child) .card-footer {
     border-bottom-left-radius: 0;
+  }
+}
+
+.fade {
+  transition: opacity 0.15s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade {
+    transition: none;
+  }
+}
+
+.fade:not(.show) {
+  opacity: 0;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition: none;
+  }
+}
+
+.collapsing.collapse-horizontal {
+  width: 0;
+  height: auto;
+  transition: width 0.35s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collapsing.collapse-horizontal {
+    transition: none;
   }
 }
