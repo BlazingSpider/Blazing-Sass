@@ -8,20 +8,15 @@
 
 // scss-docs-start collapse-classes
 .collapse {
-  &:not(.show) {
-    display: none;
-  }
+  max-height: 0;
+  -webkit-transition: max-height 1s ease;
+  -o-transition: max-height 1s ease;
+  transition: max-height 1s ease;
+  padding-bottom: 20px;
 }
 
-.collapsing {
-  height: 0;
-  overflow: hidden;
-  @include transition($transition-collapse);
-
-  &.collapse-horizontal {
-    width: 0;
-    height: auto;
-    @include transition($transition-collapse-width);
-  }
+.collapse.show {
+  max-height: 10000px;
 }
+
 // scss-docs-end collapse-classes
