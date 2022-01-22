@@ -28,38 +28,20 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
   width: 80%;
 }
 
-@include respond(xl) {
-  .col-xl-1-5 {
+@include respond(sm) { // width < 1200?
+  .col-sm-1-5 {
     width: 20%;
   }
 
-  .col-xl-2-5 {
+  .col-sm-2-5 {
     width: 40%;
   }
 
-  .col-xl-3-5 {
+  .col-sm-3-5 {
     width: 60%;
   }
 
-  .col-xl-4-5 {
-    width: 80%;
-  }
-}
-
-@include respond(lg) { // width < 1200?
-  .col-lg-1-5 {
-    width: 20%;
-  }
-
-  .col-lg-2-5 {
-    width: 40%;
-  }
-
-  .col-lg-3-5 {
-    width: 60%;
-  }
-
-  .col-lg-4-5 {
+  .col-sm-4-5 {
     width: 80%;
   }
 }
@@ -82,20 +64,38 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
   }
 }
 
-@include respond(sm) { // width < 1200?
-  .col-sm-1-5 {
+@include respond(lg) { // width < 1200?
+  .col-lg-1-5 {
     width: 20%;
   }
 
-  .col-sm-2-5 {
+  .col-lg-2-5 {
     width: 40%;
   }
 
-  .col-sm-3-5 {
+  .col-lg-3-5 {
     width: 60%;
   }
 
-  .col-sm-4-5 {
+  .col-lg-4-5 {
+    width: 80%;
+  }
+}
+
+@include respond(xl) {
+  .col-xl-1-5 {
+    width: 20%;
+  }
+
+  .col-xl-2-5 {
+    width: 40%;
+  }
+
+  .col-xl-3-5 {
+    width: 60%;
+  }
+
+  .col-xl-4-5 {
     width: 80%;
   }
 }

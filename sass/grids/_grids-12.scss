@@ -56,94 +56,48 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
   width: 91.666%;
 }
 
-@include respond(xl) {
-  .col-xl-1-12 {
+@include respond(sm) { // width < 1200?
+  .col-sm-1-12 {
     width: 8.333%;
   }
 
-  .col-xl-2-12 {
+  .col-sm-2-12 {
     width: 16.666%;
   }
 
-  .col-xl-3-12 {
+  .col-sm-3-12 {
     width: 25%;
   }
 
-  .col-xl-4-12 {
+  .col-sm-4-12 {
     width: 33.333%;
   }
 
-  .col-xl-5-12 {
+  .col-sm-5-12 {
     width: 41.666%;
   }
 
-  .col-xl-6-12 {
+  .col-sm-6-12 {
     width: 50%;
   }
 
-  .col-xl-7-12 {
+  .col-sm-7-12 {
     width: 58.333%;
   }
 
-  .col-xl-8-12 {
+  .col-sm-8-12 {
     width: 66.666%;
   }
 
-  .col-xl-9-12 {
+  .col-sm-9-12 {
     width: 75%;
   }
 
-  .col-xl-10-12 {
+  .col-sm-10-12 {
     width: 83.333%;
   }
 
-  .col-xl-11-12 {
-    width: 91.666%;
-  }
-}
-
-@include respond(lg) { // width < 1200?
-  .col-lg-1-12 {
-    width: 8.333%;
-  }
-
-  .col-lg-2-12 {
-    width: 16.666%;
-  }
-
-  .col-lg-3-12 {
-    width: 25%;
-  }
-
-  .col-lg-4-12 {
-    width: 33.333%;
-  }
-
-  .col-lg-5-12 {
-    width: 41.666%;
-  }
-
-  .col-lg-6-12 {
-    width: 50%;
-  }
-
-  .col-lg-7-12 {
-    width: 58.333%;
-  }
-
-  .col-lg-8-12 {
-    width: 66.666%;
-  }
-
-  .col-lg-9-12 {
-    width: 75%;
-  }
-
-  .col-lg-10-12 {
-    width: 83.333%;
-  }
-
-  .col-lg-11-12 {
+  .col-sm-11-12 {
     width: 91.666%;
   }
 }
@@ -194,48 +148,94 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
   }
 }
 
-@include respond(sm) { // width < 1200?
-  .col-sm-1-12 {
+@include respond(lg) { // width < 1200?
+  .col-lg-1-12 {
     width: 8.333%;
   }
 
-  .col-sm-2-12 {
+  .col-lg-2-12 {
     width: 16.666%;
   }
 
-  .col-sm-3-12 {
+  .col-lg-3-12 {
     width: 25%;
   }
 
-  .col-sm-4-12 {
+  .col-lg-4-12 {
     width: 33.333%;
   }
 
-  .col-sm-5-12 {
+  .col-lg-5-12 {
     width: 41.666%;
   }
 
-  .col-sm-6-12 {
+  .col-lg-6-12 {
     width: 50%;
   }
 
-  .col-sm-7-12 {
+  .col-lg-7-12 {
     width: 58.333%;
   }
 
-  .col-sm-8-12 {
+  .col-lg-8-12 {
     width: 66.666%;
   }
 
-  .col-sm-9-12 {
+  .col-lg-9-12 {
     width: 75%;
   }
 
-  .col-sm-10-12 {
+  .col-lg-10-12 {
     width: 83.333%;
   }
 
-  .col-sm-11-12 {
+  .col-lg-11-12 {
+    width: 91.666%;
+  }
+}
+
+@include respond(xl) {
+  .col-xl-1-12 {
+    width: 8.333%;
+  }
+
+  .col-xl-2-12 {
+    width: 16.666%;
+  }
+
+  .col-xl-3-12 {
+    width: 25%;
+  }
+
+  .col-xl-4-12 {
+    width: 33.333%;
+  }
+
+  .col-xl-5-12 {
+    width: 41.666%;
+  }
+
+  .col-xl-6-12 {
+    width: 50%;
+  }
+
+  .col-xl-7-12 {
+    width: 58.333%;
+  }
+
+  .col-xl-8-12 {
+    width: 66.666%;
+  }
+
+  .col-xl-9-12 {
+    width: 75%;
+  }
+
+  .col-xl-10-12 {
+    width: 83.333%;
+  }
+
+  .col-xl-11-12 {
     width: 91.666%;
   }
 }
