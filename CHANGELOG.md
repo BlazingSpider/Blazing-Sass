@@ -2,4 +2,4 @@
 
 - Update assets
 
-Framework version: Blazing Sass v0.1.0
+Framework version: Blazing Sass v0.1.1

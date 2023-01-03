@@ -1,10 +1,20 @@
 /*!
-Blazing v0.1.0
+Blazing v0.1.1
 Copyright 2021 Blazing Spider Web Solutions
-Licensed under the BSD License.
+Licensed under the MIT License.
 https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
 */
 /*csslint adjoining-classes: false, box-model:false*/
+
+:root {
+  --menu__separator-bg-color: #ccc;
+  --menu__heading-color: #565d64;
+  --menu__link: #777;
+  --menu__link-hover-bg-color: #eee;
+  --menu__link-color: #000;
+  --menu__children-bg-color: #fff;
+  --menu__active-bg-color: #eee;
+}
 
 .menu {
   -webkit-box-sizing: border-box;
@@ -126,14 +136,14 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
 /* misc default styling */
 
 .menu-separator {
-  background-color: #ccc;
+  background-color: var(--menu__separator-background-color);
   height: 1px;
   margin: .3em 0;
 }
 
 .menu-horizontal {
   .menu-children .menu-separator {
-    background-color: #ccc;
+    background-color: var(--menu__separator-bg-color);
     height: 1px;
     margin: .3em 0;
   }
@@ -154,15 +164,15 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
 
 .menu-heading {
   text-transform: uppercase;
-  color: #565d64;
+  color: var(--menu__heading-color);
 }
 
 .menu-link {
-  color: #777;
+  color: var(--menu__link);
 }
 
 .menu-children {
-  background-color: #fff;
+  background-color: var(--menu__children-bg-color);
 }
 
 .menu-link, .menu-heading {
@@ -179,19 +189,19 @@ https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
 }
 
 .menu-active > .menu-link {
-  background-color: #eee;
+  background-color: var(--menu__active-bg-color);
 }
 
 .menu-link {
   &:hover, &:focus {
-    background-color: #eee;
+    background-color: var(--menu__link-hover-bg-color);
   }
 }
 
 .menu-selected > .menu-link {
-  color: #000;
+  color: var(--menu__link-color);
 
   &:visited {
-    color: #000;
+    color: var(--menu__link-color);
   }
 }

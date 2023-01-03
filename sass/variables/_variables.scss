@@ -1,118 +1,23 @@
 /*!
-Blazing v0.1.0
+Blazing v0.1.1
 Copyright 2021 Blazing Spider Web Solutions
-Licensed under the BSD License.
+Licensed under the MIT License.
 https://github.com/BlazingSpider/Blazing-Sass/LICENSE.md
 */
 
 :root {
-    --color-primary: #eb2f64;
-    --color-primary-light: #FF3366;
-    --color-primary-dark: #BA265D;
 
-    --color-grey-light-1: #faf9f9;
-    --color-grey-light-2: #f4f2f2;
-    --color-grey-light-3: #f0eeee;
-    --color-grey-light-4: #ccc;
-    
-    --color-grey-dark-1: #333;
-    --color-grey-dark-2: #777;
-    --color-grey-dark-3: #999;
-
-    --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
-    --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
-    
-    --button-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
-    --button-gradient: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
-    --button-gradient-webkit: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
-    --button-bg-color: #E6E6E6;
-    --button-color: rgba(0, 0, 0, 0.8);
-    --button-border-color: rgba(0, 0, 0, 0);
-
-    --line: 1px solid var(--color-grey-light-2);
+  --background-color: white;
+  --text-color: black;
 }
 
+// Screen Breakpoint Definitions, for Mobile First
 $bp-small: 36em;     // 576px
 $bp-medium: 48em;   // 768px
 $bp-large: 62em;     // 992px
 $bp-xlarge: 75em;    // 1200px
 $bp-xxlarge: 112.5em;    // 1800px
 
-// Color system
-
-// scss-docs-start gray-color-variables
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
-// scss-docs-end gray-color-variables
-
-// scss-docs-start spacer-variables-maps
-$spacer: 1rem !default;
-$spacers: (
-  0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-) !default;
-// scss-docs-end spacer-variables-maps
-
-// Components
-//
-// Define common padding and border radius sizes and more.
-
-// scss-docs-start border-variables
-$border-width:                1px !default;
-$border-widths: (
-  1: 1px,
-  2: 2px,
-  3: 3px,
-  4: 4px,
-  5: 5px
-) !default;
-
-$border-color:                $gray-300 !default;
-// scss-docs-end border-variables
-
-// scss-docs-start border-radius-variables
-$border-radius:               .5rem !default;
-$border-radius-sm:            .6rem !default;
-$border-radius-lg:            .7rem !default;
-$border-radius-pill:          50rem !default;
-// scss-docs-end border-radius-variables
-
-$grid-gutter-width:           1.5rem !default;
-
-// Cards
-
-// scss-docs-start card-variables
-$card-spacer-y:                     $spacer !default;
-$card-spacer-x:                     $spacer !default;
-$card-title-spacer-y:               $spacer * .5 !default;
-$card-border-width:                 $border-width !default;
-$card-border-color:                 rgba($black, .125) !default;
-$card-border-radius:                $border-radius !default;
-$card-box-shadow:                   null !default;
-$card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
-$card-cap-padding-y:                $card-spacer-y * .5 !default;
-$card-cap-padding-x:                $card-spacer-x !default;
-$card-cap-bg:                       rgba($black, .03) !default;
-$card-cap-color:                    null !default;
-$card-height:                       null !default;
-$card-color:                        null !default;
-$card-bg:                           $white !default;
-$card-img-overlay-padding:          $spacer !default;
-$card-group-margin:                 $grid-gutter-width * .5 !default;
-// scss-docs-end card-variables
 
 $transition-base:             all .2s ease-in-out !default;
 $transition-fade:             opacity .15s linear !default;

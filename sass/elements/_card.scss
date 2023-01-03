@@ -1,6 +1,62 @@
 //
 // Base styles
 //
+// scss-docs-start card-variables
+$card-spacer-y:                     $spacer !default;
+$card-spacer-x:                     $spacer !default;
+$card-title-spacer-y:               $spacer * .5 !default;
+$card-border-width:                 $border-width !default;
+$card-border-color:                 rgba($black, .125) !default;
+$card-border-radius:                $border-radius !default;
+$card-box-shadow:                   null !default;
+$card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
+$card-cap-padding-y:                $card-spacer-y * .5 !default;
+$card-cap-padding-x:                $card-spacer-x !default;
+$card-cap-bg:                       rgba($black, .03) !default;
+$card-cap-color:                    null !default;
+$card-height:                       null !default;
+$card-color:                        null !default;
+$card-bg:                           $white !default;
+$card-img-overlay-padding:          $spacer !default;
+$card-group-margin:                 $grid-gutter-width * .5 !default;
+// scss-docs-end card-variables
+
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
+// scss-docs-end spacer-variables-maps
+
+// Define common padding and border radius sizes and more.
+
+// scss-docs-start border-variables
+$border-width:                1px !default;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px
+) !default;
+
+$border-color:                $gray-300 !default;
+// scss-docs-end border-variables
+
+// scss-docs-start border-radius-variables
+$border-radius:               .5rem !default;
+$border-radius-sm:            .6rem !default;
+$border-radius-lg:            .7rem !default;
+$border-radius-pill:          50rem !default;
+// scss-docs-end border-radius-variables
+
+$grid-gutter-width:           1.5rem !default;
+
 
 .card {
     position: relative;
