@@ -1,25 +1,6 @@
 //
 // Base styles
 //
-// scss-docs-start card-variables
-$card-spacer-y:                     $spacer !default;
-$card-spacer-x:                     $spacer !default;
-$card-title-spacer-y:               $spacer * .5 !default;
-$card-border-width:                 $border-width !default;
-$card-border-color:                 rgba($black, .125) !default;
-$card-border-radius:                $border-radius !default;
-$card-box-shadow:                   null !default;
-$card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
-$card-cap-padding-y:                $card-spacer-y * .5 !default;
-$card-cap-padding-x:                $card-spacer-x !default;
-$card-cap-bg:                       rgba($black, .03) !default;
-$card-cap-color:                    null !default;
-$card-height:                       null !default;
-$card-color:                        null !default;
-$card-bg:                           $white !default;
-$card-img-overlay-padding:          $spacer !default;
-$card-group-margin:                 $grid-gutter-width * .5 !default;
-// scss-docs-end card-variables
 
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
@@ -57,6 +38,25 @@ $border-radius-pill:          50rem !default;
 
 $grid-gutter-width:           1.5rem !default;
 
+// scss-docs-start card-variables
+$card-spacer-y:                     $spacer !default;
+$card-spacer-x:                     $spacer !default;
+$card-title-spacer-y:               $spacer * .5 !default;
+$card-border-width:                 $border-width !default;
+$card-border-color:                 rgba($black, .125) !default;
+$card-border-radius:                $border-radius !default;
+$card-box-shadow:                   null !default;
+$card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
+$card-cap-padding-y:                $card-spacer-y * .5 !default;
+$card-cap-padding-x:                $card-spacer-x !default;
+$card-cap-bg:                       rgba($black, .03) !default;
+$card-cap-color:                    null !default;
+$card-height:                       null !default;
+$card-color:                        null !default;
+$card-bg:                           $white !default;
+$card-img-overlay-padding:          $spacer !default;
+$card-group-margin:                 $grid-gutter-width * .5 !default;
+// scss-docs-end card-variables
 
 .card {
     position: relative;
@@ -211,65 +211,64 @@ $grid-gutter-width:           1.5rem !default;
 }
   
   
-  //
-  // Card groups
-  //
-  
-  .card-group {
+//
+// Card groups
+//
+
+.card-group {
+  // The child selector allows nested `.card` within `.card-group`
+  // to display properly.
+  > .card {
+    margin-bottom: $card-group-margin;
+  }
+
+  @include respond(sm) {
+    display: flex;
+    flex-flow: row wrap;
     // The child selector allows nested `.card` within `.card-group`
     // to display properly.
     > .card {
-      margin-bottom: $card-group-margin;
-    }
-  
-    @include respond(sm) {
-      display: flex;
-      flex-flow: row wrap;
-      // The child selector allows nested `.card` within `.card-group`
-      // to display properly.
-      > .card {
-        // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
-        flex: 1 0 0%;
-        margin-bottom: 0;
-  
-        + .card {
-          margin-left: 0;
-          border-left: 0;
-        }
-  
-        // Handle rounded corners
-          &:not(:last-child) {
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-          
-            .card-img-top,
-            .card-header {
-              // stylelint-disable-next-line property-disallowed-list
-              border-top-right-radius: 0;
-            }
-            .card-img-bottom,
-            .card-footer {
-              // stylelint-disable-next-line property-disallowed-list
-              border-bottom-right-radius: 0;
-            }
-          }
-  
-          &:not(:first-child) {
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-          
-            .card-img-top,
-            .card-header {
-              // stylelint-disable-next-line property-disallowed-list
-              border-top-left-radius: 0;
-            }
-            .card-img-bottom,
-            .card-footer {
-              // stylelint-disable-next-line property-disallowed-list
-              border-bottom-left-radius: 0;
-            }
-          }
+      // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
+      flex: 1 0 0%;
+      margin-bottom: 0;
+
+      + .card {
+        margin-left: 0;
+        border-left: 0;
       }
+
+      // Handle rounded corners
+        &:not(:last-child) {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        
+          .card-img-top,
+          .card-header {
+            // stylelint-disable-next-line property-disallowed-list
+            border-top-right-radius: 0;
+          }
+          .card-img-bottom,
+          .card-footer {
+            // stylelint-disable-next-line property-disallowed-list
+            border-bottom-right-radius: 0;
+          }
+        }
+
+        &:not(:first-child) {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        
+          .card-img-top,
+          .card-header {
+            // stylelint-disable-next-line property-disallowed-list
+            border-top-left-radius: 0;
+          }
+          .card-img-bottom,
+          .card-footer {
+            // stylelint-disable-next-line property-disallowed-list
+            border-bottom-left-radius: 0;
+          }
+        }
     }
   }
-  
+}
